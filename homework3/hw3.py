@@ -107,3 +107,7 @@ c3 = np.sum(np.where(res == 3, 1, 0))
 
 plt.bar(['low day 1', 'med day 1', 'high day 1'], [c1, c2, c3])
 plt.show()
+
+print("P(X10 = Low  | u_1..10) = {:.3f}".format(c1 / N))
+print("P(X10 = Med  | u_1..10) = {:.3f}".format(c2 / N))
+print("P(X10 = High | u_1..10) = {:.3f}".format(c3 / N))
